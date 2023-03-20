@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+
+:root {
+    --font-family: 'SF Pro Display', sans-serif;
+    --primary-color: #fff;
+    --secondary-color: #DDDC86;
+}
+
