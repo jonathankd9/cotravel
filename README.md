@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with Cotravel React App
+
+![Screenshot 2023-03-20 at 4 25 31 AM](https://user-images.githubusercontent.com/50588880/226247987-4eac5df7-a406-4dde-88be-ca98ffeeaaa8.png)
+
+# Demo available on: https://joe-cotravel.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
