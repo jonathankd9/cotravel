@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Features from "./components/Features";
 import logo from "./assets/logo.png";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+
+// const Menu = () => {
+// 	<>
+// 		<p>Destinations</p>
+// 		<p>Members</p>
+// 		<p>About us</p>
+// 		<p>Testimonials</p>
+// 		<p>Gallery</p>
+// 	</>;
+// };
 
 const App = () => {
+	const [toggleMenu, setToggleMenu] = useState(false);
 	return (
 		<div className="cotravel">
 			<div className="cotravel__navbar">
@@ -21,6 +33,32 @@ const App = () => {
 					<p>About us</p>
 					<p>Testimonials</p>
 					<p>Gallery</p>
+				</div>
+				<div className="cotravel__navbar-menu">
+					{toggleMenu ? (
+						<RiCloseLine
+							color="#fff"
+							size={30}
+							onClick={() => setToggleMenu(false)}
+						/>
+					) : (
+						<RiMenu3Line
+							color="#fff"
+							size={30}
+							onClick={() => setToggleMenu(true)}
+						/>
+					)}
+					{toggleMenu && (
+						<div className="cotravel__navbar-menu_container scale-up-center">
+							<div className="cotravel__navbar-menu_container-links">
+								<p>Destinations</p>
+								<p>Members</p>
+								<p>About us</p>
+								<p>Testimonials</p>
+								<p>Gallery</p>
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 

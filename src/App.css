@@ -15,14 +15,13 @@
     flex-direction: column;
     background-image: url(./assets/cover.png);
     background-repeat: inherit;
-    background-size: 'cover';
+    background-size: auto;
     background-position:'center';
     min-height: 100vh;
     opacity: 0.9;
     background-color: black;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     
 }
 
@@ -48,6 +47,9 @@
 .cotravel__navbar-links {
     font-weight: 400;
     font-size: 28px;
+}
+.cotravel__navbar-menu {
+    display: none;
 }
 
 .cotravel__midsection {
@@ -79,7 +81,6 @@
     display: flex;
     flex-direction: row;
     align-items: last baseline;
-
 }
 
 .cotravel__footer-button {
@@ -101,4 +102,77 @@
     flex: 1;
     flex-direction: row;
     gap: 2rem;
+}
+
+
+@media screen and (max-width:950px) {
+
+    .cotravel__navbar {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+     .cotravel__navbar-button, 
+     .cotravel__navbar-links
+     {
+        display: none;
+        }
+    
+    .cotravel__navbar-menu {
+        display: flex;
+        position: relative;
+        margin-right: -3rem;
+    }
+    .cotravel__navbar-menu svg {
+        cursor: pointer;
+    }
+
+    .cotravel__navbar-menu_container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        text-align: end;
+        background: black;
+        padding: 2rem;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+    .cotravel__navbar-menu_container-links p {
+        font-size: 28px;
+        margin-bottom: 0.5rem;
+    }
+
+    .cotravel__midsection p {
+        /* font-size: 28px;
+        font-weight: 400;
+        line-height: 30.8px;
+        text-align: left;
+        vertical-align: top;
+        letter-spacing: -2%;
+        font-style: normal; */
+        width: 100%;
+    }
+
+    .cotravel__footer-button {
+        margin-bottom: 3rem;
+    }
+
+    .cotravel__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .cotravel__footer-features {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
